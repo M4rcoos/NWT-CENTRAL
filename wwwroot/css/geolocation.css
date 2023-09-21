@@ -1,0 +1,88 @@
+﻿body {
+}
+
+#map {
+    height: 70vh;
+    width: 100vw;
+    border-radius: 16px;
+    box-shadow: -7px 15px 32px -16px rgba(0,0,0,0.64)
+}
+
+.content {
+    background: var(--white-100);
+    padding: 0
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    gap: 10px;
+}
+
+.table-container {
+    box-shadow: 2px 15px 48px -16px rgba(0,0,0,0.64);
+    border: 5px solid var(--cor-primaria);
+    border-radius: 16px;
+    border-image-slice: 1;
+    height: 70vh;
+    width: 50vw;
+    overflow-y: scroll; /* Adicione barras de rolagem quando o conteúdo ultrapassar a altura definida */
+}
+
+
+.table {
+    border-radius: 25px;
+    border-image-slice: 1;
+    min-width: 600px;
+    scrollbar-width: none;
+}
+
+
+
+
+
+.table-container::-webkit-scrollbar {
+    background-color: #212A3E;
+    width: 12px;
+    scrollbar-width: thin;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px
+}
+
+.table-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    border: 3px solid #212A3E
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+    td.location-cell {
+        white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+        overflow: hidden; /* Esconde o restante do texto que não cabe na célula */
+        text-overflow: ellipsis; /* Adiciona reticências (...) para indicar texto cortado */
+        max-width: 200px;
+        cursor: pointer;
+        transition: max-width 0.5s ease-in-out;
+    }
+        td.location-cell:hover {
+            max-width: none;
+            white-space: normal;
+            background: #ff0000;
+            
+        }
+      
+.title {
+    padding: 16px 0;
+}

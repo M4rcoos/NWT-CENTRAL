@@ -1,0 +1,118 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="wwwroot\NovaPasta1\**" />
+    <Compile Remove="wwwroot\NovaPasta2\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="wwwroot\NovaPasta1\**" />
+    <Content Remove="wwwroot\NovaPasta2\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta2\**" />
+    <None Remove="Data\**" />
+    <None Remove="wwwroot\NovaPasta1\**" />
+    <None Remove="wwwroot\NovaPasta2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Index.cshtml" />
+    <Content Remove="wwwroot\css\index.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Geolocation\index.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\login.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="node_modules\.package-lock.json" />
+    <Content Include="node_modules\aos\bower.json" />
+    <Content Include="node_modules\aos\demo\async.html" />
+    <Content Include="node_modules\aos\demo\css\styles.css" />
+    <Content Include="node_modules\aos\demo\simple.html" />
+    <Content Include="node_modules\aos\dist\aos.css" />
+    <Content Include="node_modules\aos\package.json" />
+    <Content Include="node_modules\aos\test\fixtures\aos-offset.fixture.html" />
+    <Content Include="node_modules\aos\test\fixtures\aos.fixture.html" />
+    <Content Include="node_modules\classlist-polyfill\bower.json" />
+    <Content Include="node_modules\classlist-polyfill\package.json" />
+    <Content Include="node_modules\classlist-polyfill\tests\qunit.html" />
+    <Content Include="node_modules\lodash.debounce\package.json" />
+    <Content Include="node_modules\lodash.throttle\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="node_modules\aos\.babelrc" />
+    <None Include="node_modules\aos\.editorconfig" />
+    <None Include="node_modules\aos\.gitattributes" />
+    <None Include="node_modules\aos\.travis.yml" />
+    <None Include="node_modules\aos\CHANGELOG.md" />
+    <None Include="node_modules\aos\CONTRIBUTING.md" />
+    <None Include="node_modules\aos\dist\aos.js" />
+    <None Include="node_modules\aos\karma.conf.js" />
+    <None Include="node_modules\aos\LICENSE" />
+    <None Include="node_modules\aos\postcss.config.js" />
+    <None Include="node_modules\aos\README.md" />
+    <None Include="node_modules\aos\src\js\aos.js" />
+    <None Include="node_modules\aos\src\js\helpers\calculateOffset.js" />
+    <None Include="node_modules\aos\src\js\helpers\detector.js" />
+    <None Include="node_modules\aos\src\js\helpers\elements.js" />
+    <None Include="node_modules\aos\src\js\helpers\handleScroll.js" />
+    <None Include="node_modules\aos\src\js\helpers\prepare.js" />
+    <None Include="node_modules\aos\src\js\libs\observer.js" />
+    <None Include="node_modules\aos\src\js\libs\offset.js" />
+    <None Include="node_modules\aos\src\sass\aos.scss" />
+    <None Include="node_modules\aos\src\sass\_animations.scss" />
+    <None Include="node_modules\aos\src\sass\_core.scss" />
+    <None Include="node_modules\aos\src\sass\_easing.scss" />
+    <None Include="node_modules\aos\test\aos.spec.js" />
+    <None Include="node_modules\aos\test\calculateOffset.spec.js" />
+    <None Include="node_modules\aos\test\elements.spec.js" />
+    <None Include="node_modules\aos\test\index.js" />
+    <None Include="node_modules\aos\webpack.config.js" />
+    <None Include="node_modules\aos\yarn.lock" />
+    <None Include="node_modules\classlist-polyfill\.travis.yml" />
+    <None Include="node_modules\classlist-polyfill\CHANGELOG.md" />
+    <None Include="node_modules\classlist-polyfill\LICENSE" />
+    <None Include="node_modules\classlist-polyfill\README.md" />
+    <None Include="node_modules\classlist-polyfill\script\test" />
+    <None Include="node_modules\classlist-polyfill\src\index.js" />
+    <None Include="node_modules\classlist-polyfill\tests\remove.js" />
+    <None Include="node_modules\classlist-polyfill\tests\runner.coffee" />
+    <None Include="node_modules\classlist-polyfill\tests\tests.js" />
+    <None Include="node_modules\lodash.debounce\index.js" />
+    <None Include="node_modules\lodash.debounce\LICENSE" />
+    <None Include="node_modules\lodash.debounce\README.md" />
+    <None Include="node_modules\lodash.throttle\index.js" />
+    <None Include="node_modules\lodash.throttle\LICENSE" />
+    <None Include="node_modules\lodash.throttle\README.md" />
+    <None Include="Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+</Project>

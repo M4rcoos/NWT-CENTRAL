@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NwtCentral</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NwtCentral.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header style="background: var(--cor-primaria);
+">
+
+        
+        <nav >
+            <div class="container-fluid" style="display:flex; ">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Geolocation" asp-action="Index">
+                    <img src="~/icones/logo.png" alt="Logo" width="200" height="80" class="d-inline-block align-text-top">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1"style="display:flex; flex-direction:row; gap:16px">
+                        <li class="nav-item">
+                            <a class="nav-link text-light " asp-area="" asp-controller="Geolocation" asp-action="Index">Central</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-light " asp-area="" asp-controller="Home" asp-action="Privacy">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background: var(--cor-primaria);display:flex;align-items:center ">
+        <div class="container" style="display:flex;justify-content:space-between">
+            <div style="display:flex;">
+           <p>
+                    &copy; 2023 - NwtCentral - 
+           </p>  <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:#fff;">Privacy</a>
+            </div>
+
+            <div class="social-midia" style="display:flex; gap:12px">
+                <a href="https://www.facebook.com/newtesc/" target="_blank">
+                    <img src="~/icones/facebook.png" alt="Icone do Facebook" width="36" height="36">
+
+                </a>
+                <a href="https://www.linkedin.com/company/newtesc/mycompany/" target="_blank">
+                    <img src="~/icones/linkedin (1).png" alt="Icone do Linkedin" width="36" height="36">
+
+                </a>
+            </div>
+           
+        </div>
+       
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
